@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="static/how_to.css">
+<link rel="stylesheet" title="light" href="static/how_to.css">
+<link rel="alternate stylesheet" title="dark" href="static/how_to_dark.css">
 <title>Howto_Use_GitBash_w_GitHub</title>
 </head>
 
@@ -12,6 +13,13 @@
 <div class="footer">
 <a href="#Top-of-Page">Top of Page</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Contents">Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Bottom-of-Page">Bottom of Page</a><br></p>
 </div>
+<input class="input" id="toggle" type="checkbox" onclick="switch_style('light');return false;" name="theme" value="Dark Theme" id="dark">
+<label class="label" for="toggle">
+<div class="left">Light</div>
+<div class="switch"><span class="slider round"></span></div>
+<div class="right">Dark</div>
+</label>
+</input>
 <a id="Top-of-Page"></a>
 <h1>How to Use Git Bash with Git Hub</h1>
 <h5 id="Step-by-Step-Fundamentals">Step-by-Step Fundamentals</h5>
