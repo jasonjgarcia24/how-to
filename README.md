@@ -1,2 +1,2 @@
 # how-to
-A documentation of my learning adventures, failures, and successes.
+A working set of documentation of my learning adventures, failures, and successes.
