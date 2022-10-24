@@ -1,0 +1,4 @@
+HOST=`node -p "require('./config.json').HOST"`
+PORT=`node -p "require('./config.json').PORT"`
+eval "$(grep ^DEAD_ACCOUNTS= .env)"
+ganache --wallet.accounts $DEAD_ACCOUNTS --host $HOST --port $PORT --chain.chainId $CHAINID 

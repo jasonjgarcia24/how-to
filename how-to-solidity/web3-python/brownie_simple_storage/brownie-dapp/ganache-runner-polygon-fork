@@ -1,0 +1,6 @@
+HOST=`node -p "require('./config.json').HOST"`
+PORT=`node -p "require('./config.json').PORT"`
+POLYGON_BLOCK_NUMBER=`node -p "require('./config.json').POLYGON_BLOCK_NUMBER"`
+eval "$(grep ^DEAD_ACCOUNTS= .env)"
+eval "$(grep ^ALCHEMY_POLYGON_URL= .env)"
+ganache --wallet.accounts $DEAD_ACCOUNTS --host $HOST --port $PORT --chain.chainId $CHAINID --fork $ALCHEMY_POLYGON_URL@$POLYGON_BLOCK_NUMBER

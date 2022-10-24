@@ -1,0 +1,5 @@
+HOST=`node -p "require('./config.json').HOST"`
+PORT=`node -p "require('./config.json').PORT"`
+eval "$(grep ^DEAD_ACCOUNTS= .env)"
+eval "$(grep ^ALCHEMY_MAINNET_URL= .env)"
+ganache --wallet.accounts $DEAD_ACCOUNTS --host $HOST --port $PORT --chain.chainId $CHAINID --fork $ALCHEMY_MAINNET_URL
